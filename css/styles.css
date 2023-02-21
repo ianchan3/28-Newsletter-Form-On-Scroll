@@ -156,7 +156,7 @@ h2 {
   background-color: var(--white);
   border: 2px dashed var(--color-primary);
   padding: 2rem 3rem;
-  /* transform: translateX(-100%); */
+  transform: translateX(-100%);
   transition: all 0.5s;
 }
 

@@ -30,4 +30,17 @@ function scrollProgress() {
 
   progressBar.style.visibility = "visible";
   progressBar.style.width = scrollPercentage + "%";
+
+  const newsLetter = document.querySelector(".newsletter");
+  const close = document.querySelector(".fa-times");
+
+  if ( scrollPercentage > 80 ) {
+    newsLetter.style.transform = "translateX(0)";
+  } else {
+    newsLetter.style.transform = "translateX(-100%)";
+  }
+
+  close.addEventListener("click", () => {
+    newsLetter.style.transform = "translate(-100%)";
+  })
 }
